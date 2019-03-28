@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-            	sh 'sudo -H pip3 install Django'
-                sh 'python3 manage.py runserver'
+            	sh 'virtualenv env -p python3.5'
+            	sh '. env/bin/activate'
+            	sh 'env/bin/pip install -r requirements.txt'
+                sh 'env/bin/python3.5 manage.py runserver'
             }
         }
     }
