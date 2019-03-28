@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
+            	sh 'pip3 install Django'
                 sh 'python3 manage.py runserver'
             }
         }
     }
 }
-
