@@ -2,6 +2,8 @@
 
 Let’s learn by [example](https://docs.djangoproject.com/en/2.1/intro/tutorial01/).
 
+Add something here to test jenkins setup.
+
 ## p1
 - Creating a project
 - The development server
